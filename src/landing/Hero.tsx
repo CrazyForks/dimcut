@@ -10,13 +10,13 @@ export const Hero: Component = () => {
       id="top"
       class="relative flex min-h-[calc(100vh-4rem)] items-center"
     >
-      <div class="mx-auto grid w-full max-w-[1200px] grid-cols-1 items-center gap-16 px-8 lg:grid-cols-12">
+      <div class="mx-auto grid w-full max-w-300 grid-cols-1 items-center gap-16 px-8 lg:grid-cols-12">
         <div class="lg:col-span-7">
           <p class="mb-8 font-sans text-[0.72rem] uppercase tracking-[0.32em] text-[--color-fg-faint]">
             {t("hero.subtitle")}
           </p>
 
-          <h1 class="font-serif text-[clamp(2.6rem,5.6vw,4.8rem)] font-semibold leading-[1.06] tracking-[-0.02em] text-[--color-fg]">
+          <h1 class="font-serif text-[clamp(2.6rem,5.6vw,4.8rem)] font-semibold leading-normal tracking-[-0.02em] text-[--color-fg]">
             <Show when={t("hero.title1")}>
               {t("hero.title1")}
               <br />
@@ -24,7 +24,7 @@ export const Hero: Component = () => {
             <Show when={t("hero.title2")}>{t("hero.title2")} </Show>
           </h1>
 
-          <div class="mt-5 max-w-[520px] font-sans text-[0.95rem] leading-[1.75] text-[--color-fg-dim]">
+          <div class="mt-5 max-w-130 font-sans text-[0.95rem] leading-[1.75] text-[--color-fg-dim]">
             <pre>{t("hero.desc1")}</pre>
           </div>
 
